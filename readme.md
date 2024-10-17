@@ -16,7 +16,6 @@ jeto para o Sistema Computacional
 "struct"
 
 **modelando os dados (uma estrutura) struct
-
 modelando as operações (uma função) function**
 
 na POO, as entidades são modeladas em uma classe:
