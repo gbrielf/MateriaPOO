@@ -1,0 +1,71 @@
+#LISTA3
+
+# I. Implementar classes em Python para representar =
+# 1. Um Retângulo
+# Escrever a classe Retangulo de acordo com o diagrama UML apresentado.
+# • A classe deve ter como atributos: a base (b) e a altura (h) do retângulo
+# • O construtor da classe recebe os valores iniciais da base e altura do
+# retângulo, que devem ser positivos
+# • Os métodos SetBase e SetAltura podem modificar os valores da base e da
+# altura, respectivamente
+# • Os métodos GetBase e GetAltura retornam os valores armazenados nos
+# atributos
+# • CalcArea e CalcDiagonal calculam a área e a diagonal do retângulo
+# • O método ToString deve retornar um texto com os atributos do objeto.
+
+from math import *
+
+class UmRetangulo:
+    def __init__(self, base, altura):
+        self.base = base
+        self.altura = altura
+        self.area = base * altura
+    
+    def setBase(self):
+        self.base = int(input())
+    def getBase(self):
+        return self.base
+    def setAltura(self):
+        self.altura = int(input())
+    def getAltura(self):
+        area = self.altura
+        return area
+    
+    def CalcArea(self, base, altura):
+        area = base*altura
+        return area
+    def CalcDiagonal(self, base, altura):
+        x = float(base*base + altura*altura)
+        self.diagonal = sqrt(x)
+        # x² = b² + h² => x = sqrt(b²+h²)
+        return diagonal
+    def ToString(self):
+        print(f"Base = {self.base}\nAltura = {self.altura}\nÁrea = {self.area}\nDiagonal = {self.diagonal}")
+
+class UI:
+    @staticmethod
+    def main():  
+        op = 1
+        while op != 0:
+            op = UI.menu()
+            if op == 1: UI.novoRetangulo()
+    @staticmethod
+    def menu():
+        print("1-Quadrado0-Fim")
+        return int(input("Escolha uma opção: "))  
+    @staticmethod
+    def novoRetangulo():      
+
+        base = float(input())
+        altura = float(input())    
+    
+        x = UmRetangulo(base, altura)  # umRetangulo() cria um objeto da classe
+                        # x é uma referência para esse objeto
+        #print(x.__b)
+        #print(x.h)                
+        #x.b = float(input("Informe o valor da base do triângulo: "))
+        #x.h = float(input("Inform o valor da altura: "))
+        print(x.ToString())
+        
+
+UI.main()
