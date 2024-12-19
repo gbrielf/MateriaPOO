@@ -1,0 +1,1 @@
+[{"id": 1, "descricao": "gol", "preco": 20000.0, "estoque": 95, "id_categoria": 3}, {"id": 2, "descricao": "uno", "preco": 10000.0, "estoque": 100, "id_categoria": 3}, {"id": 3, "descricao": "civic", "preco": 40000.0, "estoque": 100, "id_categoria": 3}]
